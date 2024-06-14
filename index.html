@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <img class="header-logo" src="./resource/Logo1.png" alt="Logo">
+                <ul class="header-menu">
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="header-right">
+                <div class="header-cart">
+                    <img src="./resource/cart.png" alt="">
+                </div>
+                <div class="header-search">
+                    <img src="./resource/search.png" alt="Search">
+                </div>
+                <div class="header-language" id="languageToggle">
+                    <div class="language-toggle"><span class="lang-eng">ENG</span><span class="lang-esp">ESP</span></div>
+                    <div class="lang-label-eng"></div>
+                    <div class="lang-label-esp"></div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="main-content">
+            <div class="slider">
+                <div class="slide slide1">
+                    <div class="slide-image">&#9733;</div>
+                    <div class="slide-content">
+                        <label for="" class="slide-product-name">PRODUCT 1</label>
+                        <div class="product-description" id="descriptionProduct">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, odit explicabo, omnis voluptate non tempore eligendi porro odio vitae similique voluptatem? Sunt recusandae dolorum ab tempora dignissimos voluptates cupiditate nisi?
+                        </div>
+                        <div class="promo-btn">
+                            <span class="see-more" onclick="toggleDescription('descriptionProduct')">see more</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <label for="" class="slide-product-name">PRODUCT 2</label>
+                        <div class="product-description" id="descriptionProduct2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, odit explicabo, omnis voluptate non tempore eligendi porro odio vitae similique voluptatem? Sunt recusandae dolorum ab tempora dignissimos voluptates cupiditate nisi?
+                        </div>
+                        <div class="promo-btn">
+                            <span class="see-more" onclick="toggleDescription('descriptionProduct2')">see more</span>
+                        </div>
+                    </div>
+                    <div class="slide-image">&#9733;</div>
+                </div>
+            </div>
+
+            <div class="slider-manual">
+                <input type="radio" name="slider" value="0" id="slide1-manual">
+                <label for="slide1-manual"></label>
+                <input type="radio" name="slider" value="1" id="slide2-manual">
+                <label for="slide2-manual"></label>
+            </div>
+
+            <div class="banner">
+                <img src="./resource/rect2.png" alt="Banner Image">
+                <img class="banner-text" src="./resource/text4.png" alt="Banner Text">
+            </div>
+
+            <div class="category">
+                <div class="category-label">Category 1</div>
+                <div class="category-products">
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="promo">
+                <div class="promo-label">Promo 1</div>
+                <div class="promo-product">
+                    <div class="promo-image"></div>
+                    <div class="promo-details">
+                        <label for="" class="promo-product-name">PRODUCT 1</label>
+                        <label for="" class="promo-product-price">$0.000</label>
+                        <div class="promo-description" id="promo_description">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae, officia possimus quisquam ad maiores a tempore dolorum ipsam qui ipsum, repellat quod incidunt est! Repellat omnis deserunt cum cumque placeat.
+                        </div>
+                        <div class="promo-btn">
+                            <span class="see-more">see more</span>
+                            <a class="add-to-cart">ADD TO CART</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="category-label">Category 2</div>
+                <div class="category-products">
+                    <div class="product">
+                        <div class="product-image"></div>
+                        <label class="product-name">Product</label>
+                        <label class="product-price">$0.000</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <img src="./resource/g1.png" alt="Footer Logo">
+        <ul class="footer-menu">
+            <li><a href="">ABOUT US</a></li>
+            <li>|</li>
+            <li><a href="">CONTACT</a></li>
+            <li>|</li>
+            <li><a href="">SUPPORT</a></li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
